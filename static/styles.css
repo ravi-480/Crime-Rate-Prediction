@@ -2,14 +2,24 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Lora', serif;
-    background-color: #fff2df;
-    color: black;   
+    background: hsla(206, 91%, 66%, 1);
+
+  background: hsla(192, 95%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsl(0deg 0% 100% / 0%) 0%, hsl(194.4deg 95.45% 49.87% / 52%) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#07C8F9", endColorstr="#0D41E1", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5AB2F7", endColorstr="#12CFF3", GradientType=1 );
+    color: black;
 }
 
-header{    
-    background-color:  #002244;
-    color: #fff2df; 
-    border-bottom: solid 3px;
+header{
+    background-color:  #02203f;
+    background-image: linear-gradient(to bottom right, #00c6fb 0%, #005bea 100%);
+    border-bottom: solid px;
 }
 .title{
     margin: 0px;
@@ -54,8 +64,9 @@ select{
     font-family: 'Lora', serif;
     font-style: oblique;
     font-weight: 400;    
-    border: solid 2px #ffe5be;
     border-radius: 10px;
+    border: none;
+    outline: none;
 }
 
 .button{
@@ -71,15 +82,17 @@ select{
     font-family: 'Lora', serif;
     font-style: oblique;
     font-weight: 900;
-    background-color: #002244;
-    color: #fff2df;   
-    border: solid 2px #ffe5be;    
+    border: none;
+    background-color: #3793ee;
+    color: #061028;   
     border-radius: 10px;
 }
 .btn:hover{   
-    background-color: #ffe5be;
+    background-color: #44c5f8;
     color: #002244;
-    border: solid 2px #002244; 
+    transition: 0.4s all;
+    cursor: pointer;
+    
 }
 
 .prediction{
@@ -106,7 +119,9 @@ table.table3{
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid black;
+    outline: 2px solid rgb(1, 4, 76);
+    padding: 20px;
+    border-radius: 5px;
 }
 td.result{
     width: 300px;
@@ -119,7 +134,6 @@ td.result{
 
 #about{
     text-align: center;
-    text-decoration: underline;
     font-size: 30px;
     color: #002244;
 }
