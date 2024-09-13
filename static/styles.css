@@ -31,7 +31,7 @@ header {
 
 .section1 {
     border-bottom: 2px solid black;
-    min-height: 500px;
+    min-height: 306px;
 }
 
 table.table1 {
@@ -136,8 +136,8 @@ td.result {
 }
 
 #introduction {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 20px;
     font-style: oblique;
 }
@@ -186,7 +186,7 @@ td.result {
 
 @media screen and (max-width: 500px) {
     .title {
-        font-size: 30px;
+        font-size: 37px;
     }
     .tagline{
         font-size: 20px;
