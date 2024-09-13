@@ -1,34 +1,27 @@
-body{
+/* Base styles */
+body {
     margin: 0px;
     padding: 0px;
     font-family: 'Lora', serif;
-    background: hsla(206, 91%, 66%, 1);
-
-  background: hsla(192, 95%, 50%, 1);
-
-background: linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(192, 95%, 50%, 1) 0%, hsla(225, 89%, 47%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsl(0deg 0% 100% / 0%) 0%, hsl(194.4deg 95.45% 49.87% / 52%) 100%);
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#07C8F9", endColorstr="#0D41E1", GradientType=1 );
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5AB2F7", endColorstr="#12CFF3", GradientType=1 );
+    background: linear-gradient(90deg, rgb(19, 191, 234) 0%, rgb(157, 203, 208) 100%);
     color: black;
 }
 
-header{
-    background-color:  #02203f;
+header {
+    background-color: #02203f;
     background-image: linear-gradient(to bottom right, #00c6fb 0%, #005bea 100%);
     border-bottom: solid px;
 }
-.title{
+
+.title {
     margin: 0px;
     padding-top: 30px;
     text-align: center;
     font-size: 70px;
-    font-style: italic; 
+    font-style: italic;
 }
-.tagline{
+
+.tagline {
     margin: 0px;
     padding-bottom: 30px;
     text-align: center;
@@ -36,12 +29,12 @@ header{
     font-style: oblique;
 }
 
-.section1{
+.section1 {
     border-bottom: 2px solid black;
     min-height: 500px;
 }
 
-table.table1{
+table.table1 {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -49,32 +42,31 @@ table.table1{
     font-style: oblique;
     font-weight: 400;
 }
-td.label{ 
+
+td.label, td.sel {
     width: 300px;
     height: 50px;
 }
-td.sel{
-    width: 300px;
-    height: 50px;
-}
-select{
+
+select {
     padding: 5px;
     width: 200px;
     font-size: 18px;
     font-family: 'Lora', serif;
     font-style: oblique;
-    font-weight: 400;    
+    font-weight: 400;
     border-radius: 10px;
     border: none;
     outline: none;
 }
 
-.button{
+.button {
     margin: 25px;
-    text-align: center; 
-    padding: 20px;   
+    text-align: center;
+    padding: 20px;
 }
-.btn{
+
+.btn {
     padding: 5px;
     width: 200px;
     height: 50px;
@@ -84,38 +76,41 @@ select{
     font-weight: 900;
     border: none;
     background-color: #3793ee;
-    color: #061028;   
+    color: #061028;
     border-radius: 10px;
 }
-.btn:hover{   
+
+.btn:hover {
     background-color: #44c5f8;
     color: #002244;
     transition: 0.4s all;
     cursor: pointer;
-    
 }
 
-.prediction{
+.prediction {
     padding-bottom: 50px;
     border-bottom: 2px solid;
 }
-table.table2{
+
+table.table2 {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-tr.r1{
+
+tr.r1 {
     font-size: 20px;
     font-style: oblique;
     font-weight: 400;
 }
-tr.r2{
+
+tr.r2 {
     font-size: 20px;
     font-style: oblique;
     font-weight: 900;
 }
 
-table.table3{
+table.table3 {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -123,43 +118,77 @@ table.table3{
     padding: 20px;
     border-radius: 5px;
 }
-td.result{
+
+td.result {
     width: 300px;
     height: 50px;
 }
-.button2{
+
+.button2 {
     text-align: center;
     margin-top: 45px;
 }
 
-#about{
+#about {
     text-align: center;
     font-size: 30px;
     color: #002244;
 }
-#introduction{
-    padding-left: 50px;
-    padding-right: 50px;
+
+#introduction {
+    padding-left: 150px;
+    padding-right: 150px;
     font-size: 20px;
     font-style: oblique;
 }
 
-.footer{
+.footer {
     padding: 10px;
     height: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(6 23  52);
+    background-color: rgb(6 23 52);
     color: white;
 }
-#developer{
+
+#developer {
     flex-basis: 100%;
     text-align: center;
 }
-#linkedin{    
-    padding-right: 20px;    
+
+#linkedin {
+    padding-right: 20px;
 }
-#github{
+
+#github {
     padding-left: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 37px;
+    }
+    .tagline{
+        font-size: 20px;
+    }
 }
